@@ -1,17 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
-  <defs>
-    <linearGradient id="bg" x1="200" y1="0" x2="600" y2="800" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#00C9FF"/>
-      <stop offset="0.5" stop-color="#6C63FF"/>
-      <stop offset="1" stop-color="#E040FB"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="800" rx="179" fill="url(#bg)"/>
-  <g transform="translate(400 400)" stroke="#fff" stroke-width="32" fill="none" stroke-linecap="round">
-    <circle cx="0" cy="0" r="160"/>
-    <ellipse cx="0" cy="0" rx="70" ry="160"/>
-    <line x1="-160" y1="0" x2="160" y2="0"/>
-    <path d="M-145 -70 Q0 -90 145 -70"/>
-    <path d="M-145 70 Q0 90 145 70"/>
+  <rect width="800" height="800" rx="179" fill="#7C3AED"/>
+  <g transform="translate(400 390)" stroke="#fff" fill="#fff">
+    <!-- Network nodes connected in a web — representing distributed stores -->
+    <!-- Center node -->
+    <circle cx="0" cy="0" r="28"/>
+    <!-- Outer ring nodes -->
+    <circle cx="0" cy="-155" r="22"/>
+    <circle cx="-147" cy="-48" r="22"/>
+    <circle cx="-91" cy="125" r="22"/>
+    <circle cx="91" cy="125" r="22"/>
+    <circle cx="147" cy="-48" r="22"/>
+    <!-- Inner connections (center to outer) -->
+    <line x1="0" y1="0" x2="0" y2="-155" stroke-width="8" opacity="0.5"/>
+    <line x1="0" y1="0" x2="-147" y2="-48" stroke-width="8" opacity="0.5"/>
+    <line x1="0" y1="0" x2="-91" y2="125" stroke-width="8" opacity="0.5"/>
+    <line x1="0" y1="0" x2="91" y2="125" stroke-width="8" opacity="0.5"/>
+    <line x1="0" y1="0" x2="147" y2="-48" stroke-width="8" opacity="0.5"/>
+    <!-- Outer ring connections (pentagon) -->
+    <line x1="0" y1="-155" x2="-147" y2="-48" stroke-width="6" opacity="0.3"/>
+    <line x1="-147" y1="-48" x2="-91" y2="125" stroke-width="6" opacity="0.3"/>
+    <line x1="-91" y1="125" x2="91" y2="125" stroke-width="6" opacity="0.3"/>
+    <line x1="91" y1="125" x2="147" y2="-48" stroke-width="6" opacity="0.3"/>
+    <line x1="147" y1="-48" x2="0" y2="-155" stroke-width="6" opacity="0.3"/>
   </g>
 </svg>
