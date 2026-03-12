@@ -259,6 +259,20 @@ Only the following category IDs are recognized by WVW. Apps with unrecognized ca
 
 The canonical source is [`categories.json`](categories.json).
 
+## Let Your AI Agent Do It
+
+You don't need to write `apps.json` by hand. Just give this document to your AI coding agent (Cursor, Claude Code, Windsurf, Copilot, etc.) and ask it to:
+
+> "Create an apps.json for my GitHub repos following this spec."
+
+The agent will read the schema, look up your repos, fetch descriptions and icons, and generate a valid `apps.json` ready to commit. You can also ask it to:
+
+- Clone Appétit and set up a standalone store for you
+- Open a PR to `repos.json` on `f/wvw.dev` to list your apps
+- Run `update-stats.sh` to refresh star counts
+
+This entire project — Appétit and World Vibe Web — was built with agentic engineering. Your `apps.json` can be too.
+
 ## Tips
 
 - **Use the schema.** Add `"$schema": "https://wvw.dev/apps.schema.json"` to the top of your `apps.json` for editor validation and autocomplete.
