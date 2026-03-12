@@ -289,19 +289,12 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 6px 8px;
   margin-bottom: 12px;
-  border-radius: var(--radius-sm);
   text-decoration: none;
   color: var(--text-primary);
   font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.02em;
-  transition: background var(--transition);
-}
-
-.wvw-badge:hover {
-  background: var(--nav-hover);
 }
 
 .wvw-badge-icon {
